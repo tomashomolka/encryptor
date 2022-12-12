@@ -1,0 +1,9 @@
+services:
+    php:
+        container_name: encryptor_php
+        hostname: php
+        build:
+            dockerfile: .docker/Dockerfile
+            context: .
+        volumes:
+          - ./:/var/www/html
